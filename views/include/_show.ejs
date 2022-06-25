@@ -1,0 +1,20 @@
+<% if((item) => { %>
+  <tr>
+    <td><%= item.id%></td>
+    <td><%= item.name%></td>
+    <td><%= item.email%></td>
+    <td><%= item.gender%></td>
+    <td><%= item.status%></td>
+    <td>
+      
+      <a href="/update-user" class="btn border-shadow update">
+        <span class="text-graient"><i class="fas fa-solid fa-pen"></i></span>
+      </a>
+      <a class="btn border-shadow delete">
+        <span class="text-graient"><i class="fas fa-solid fa-trash"></i></span>
+      </a>
+    </td>
+  </tr>
+  <% }) %>
+  
+  
