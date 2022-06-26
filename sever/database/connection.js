@@ -16,6 +16,7 @@ const connectDB = () => {
       resolve(con);
       console.log("da ket noi thanh cong");
     });
+    con.end();
   });
 };
 module.exports = connectDB;
